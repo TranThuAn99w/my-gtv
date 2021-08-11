@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giới thiệu</title>
     <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans&family=Inter:display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="about-body">
     <section class="ss ss__head">
         <div class="container mx-auto">
             <div class="max-width-3 mx-auto">
@@ -91,7 +94,6 @@
                                     </p>
                                 </div>
                             </div>
-                            
                         </div>
                         <div class="row flex mb3 max-width-3 mx-auto">
                             <div class="card mr3">
@@ -130,25 +132,8 @@
                         <h2>Our Team</h2>
                     </div>
                     <div class="content__cards">
-                        <div class="row flex mb3">
-                            <div class="card">
-                                <div class="card__img">
-                                    <img src="create.png" alt="">
-                                </div>
-                                <div class="card__body">
-                                    <h4>Đỗ Anh Việt</h4>
-                                    <p>Founder/ CEO</p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card__img">
-                                    <img src="create.png" alt="">
-                                </div>
-                                <div class="card__body">
-                                    <h4>Đỗ Anh Việt</h4>
-                                    <p>Founder/ CEO</p>
-                                </div>
-                            </div>
+                        <div class="slider__our-team flex flex-wrap">
+                        <div class="col-4 mb4">
                             <div class="card">
                                 <div class="card__img">
                                     <img src="create.png" alt="">
@@ -159,25 +144,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row flex mb3">
-                            <div class="card">
-                                <div class="card__img">
-                                    <img src="create.png" alt="">
-                                </div>
-                                <div class="card__body">
-                                    <h4>Đỗ Anh Việt</h4>
-                                    <p>Founder/ CEO</p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card__img">
-                                    <img src="create.png" alt="">
-                                </div>
-                                <div class="card__body">
-                                    <h4>Đỗ Anh Việt</h4>
-                                    <p>Founder/ CEO</p>
-                                </div>
-                            </div>
+                        <div class="col-4 mb4">
                             <div class="card">
                                 <div class="card__img">
                                     <img src="create.png" alt="">
@@ -188,7 +155,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row flex">
+                        <div class="col-4 mb4">
                             <div class="card">
                                 <div class="card__img">
                                     <img src="create.png" alt="">
@@ -198,6 +165,51 @@
                                     <p>Founder/ CEO</p>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-4 mb4">
+                            <div class="card">
+                                <div class="card__img">
+                                    <img src="create.png" alt="">
+                                </div>
+                                <div class="card__body">
+                                    <h4>Đỗ Anh Việt</h4>
+                                    <p>Founder/ CEO</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 mb4">
+                            <div class="card">
+                                <div class="card__img">
+                                    <img src="create.png" alt="">
+                                </div>
+                                <div class="card__body">
+                                    <h4>Đỗ Anh Việt</h4>
+                                    <p>Founder/ CEO</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 mb4">
+                            <div class="card">
+                                <div class="card__img">
+                                    <img src="create.png" alt="">
+                                </div>
+                                <div class="card__body">
+                                    <h4>Đỗ Anh Việt</h4>
+                                    <p>Founder/ CEO</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 mb4">
+                            <div class="card">
+                                <div class="card__img">
+                                    <img src="create.png" alt="">
+                                </div>
+                                <div class="card__body">
+                                    <h4>Đỗ Anh Việt</h4>
+                                    <p>Founder/ CEO</p>
+                                </div>
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -280,7 +292,6 @@
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
                     <div class="row max-width-1 mx-auto mt4">
                         <a href="#" class="btn__link">
@@ -302,15 +313,15 @@
                         <div class="row flex flex-wrap">
                             <div class="col-4 mb4 box box-br">
                                 <div class="box__head">
-                                    <h2>200+</h2>
+                                    <h4>200+</h4>
                                 </div>
                                 <div class="box__body">
                                     <p>Dự án PBN thúc đẩy dự án an toàn, tự nhiên và bền vững.</p>
                                 </div>
                             </div>
-                            <div class="col-4 mb4 box box-br">
+                            <div class="col-4 mb4 box box-br mb-br">
                                 <div class="box__head">
-                                    <h2>24.000+</h2>
+                                    <h4>24.000+</h4>
                                 </div>
                                 <div class="box__body">
                                     <p>Lượt followers kênh Youtube chia sẻ kiến thức SEO.</p>
@@ -318,7 +329,7 @@
                             </div>
                             <div class="col-4 mb4 box box-br">
                                 <div class="box__head">
-                                    <h2>200+</h2>
+                                    <h4>200+</h4>
                                 </div>
                                 <div class="box__body">
                                     <p>Dự án SEO trải rộng trên các thị trường từ dễ đến khó.</p>
@@ -326,7 +337,7 @@
                             </div>
                             <div class="col-4 mb4 box">
                                 <div class="box__head">
-                                    <h2>50.000+</h2>
+                                    <h4>50.000+</h4>
                                 </div>
                                 <div class="box__body">
                                     <p>Thành viên cộng đồng SEO ở Group Facebook.</p>
@@ -334,15 +345,15 @@
                             </div>
                             <div class="col-4 box box-br">
                                 <div class="box__head">
-                                    <h2>5+</h2>
+                                    <h4>5+</h4>
                                 </div>
                                 <div class="box__body">
                                     <p>Dự án Consulting được thực hiện chỉ trong vòng một tháng ra mắt dịch vụ.</p>
                                 </div>
                             </div>
-                            <div class="col-4 box box-br">
+                            <div class="col-4 box box-br mb-br">
                                 <div class="box__head">
-                                    <h2>10+</h2>
+                                    <h4>10+</h4>
                                 </div>
                                 <div class="box__body">
                                     <p>Dự án Entity được thực hiện chỉ trong vòng một tháng ra mắt dịch vụ.</p>
@@ -350,7 +361,7 @@
                             </div>
                             <div class="col-4 box">
                                 <div class="box__head">
-                                    <h2>7+</h2>
+                                    <h4>7+</h4>
                                 </div>
                                 <div class="box__body">
                                     <p>Sự kiến Offline chia sẻ SEO và Marketing thành công với hơn 3000 người tham dự.</p>
@@ -370,7 +381,7 @@
                         <h2>Khách hàng nói gì về GTV SEO</h2>
                     </div>
                     <div class="slider__khach-noi-gi">
-                        <div class="item mr3">
+                        <div class="item mx2">
                             <div class="content__text mb3">
                                 <p>5 sao cho dịch vụ Entity của GTV SEO, Sau 1 tháng triển khai Entity giúp website của bên mình đã top trở lại, dù trước đó bị gg phạt tương tự như GTV SEO (tất cả các từ khóa rớt xuống trang 5 trang 6)</p>
                             </div>
@@ -386,7 +397,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item mr3">
+                        <div class="item mx2">
                             <div class="content__text mb3">
                                 <p>Dịch vụ SEO của GTV rất chất lượng, quan trọng là đội ngũ nhân viên chăm sóc khách hàng nhiệt tình và tận tậm. Mình mong rằng GTV sẽ phát triển dịch vụ SEO hơn nữa, ngày càng giúp đỡ được nhiều hơn các Doanh nghiệp tại Việt Nam.</p>
                             </div>
@@ -402,7 +413,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item mr3">
+                        <div class="item mx2">
                             <div class="content__text mb3">
                                 <p>5 sao cho dịch vụ Entity của GTV SEO, Sau 1 tháng triển khai Entity giúp website của bên mình đã top trở lại, dù trước đó bị gg phạt tương tự như GTV SEO (tất cả các từ khóa rớt xuống trang 5 trang 6)</p>
                             </div>
@@ -418,7 +429,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item mr3">
+                        <div class="item mx2">
                             <div class="content__text mb3">
                                 <p>Dịch vụ SEO của GTV rất chất lượng, quan trọng là đội ngũ nhân viên chăm sóc khách hàng nhiệt tình và tận tậm. Mình mong rằng GTV sẽ phát triển dịch vụ SEO hơn nữa, ngày càng giúp đỡ được nhiều hơn các Doanh nghiệp tại Việt Nam.</p>
                             </div>
@@ -434,7 +445,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item mr3">
+                        <div class="item mx2">
                             <div class="content__text mb3">
                                 <p>5 sao cho dịch vụ Entity của GTV SEO, Sau 1 tháng triển khai Entity giúp website của bên mình đã top trở lại, dù trước đó bị gg phạt tương tự như GTV SEO (tất cả các từ khóa rớt xuống trang 5 trang 6)</p>
                             </div>
@@ -450,7 +461,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item mr3">
+                        <div class="item mx2">
                             <div class="content__text mb3">
                                 <p>Dịch vụ SEO của GTV rất chất lượng, quan trọng là đội ngũ nhân viên chăm sóc khách hàng nhiệt tình và tận tậm. Mình mong rằng GTV sẽ phát triển dịch vụ SEO hơn nữa, ngày càng giúp đỡ được nhiều hơn các Doanh nghiệp tại Việt Nam.</p>
                             </div>
@@ -480,6 +491,19 @@
                 <div class="content">
                     <div class="content__head">
                         <h2>Bạn sẽ nhận được gì từ GTV SEO?</h2>
+                    </div>
+                    <div class="tabs-mb">
+                        <button id="btn-show-tabs"><span>Bài viết</span> <i class="fas fa-angle-down"></i></button>
+                        <ul class="tabs hide" id="tab-list">
+                            <li class="tab-link current" data-tab="tab-1">Bài viết </li>
+                            <li class="tab-link" data-tab="tab-2">Tài liệu & Video</option>
+                            <li class="tab-link" data-tab="tab-3">Cộng đồng</li>
+                            <li class="tab-link" data-tab="tab-4">Event</li>
+                            <li class="tab-link" data-tab="tab-5">Khoá học</li>
+                            <li class="tab-link" data-tab="tab-6">Dịch vụ</li>
+                            <li class="tab-link" 
+                            data-tab="tab-7">Cơ hội nghề nghiệp</li>
+                        </ul>
                     </div>
                     <ul class="tabs">
                         <li class="tab-link current" data-tab="tab-1">Bài viết </li>
@@ -657,19 +681,24 @@ Tại GTV, bạn sẽ có cơ hội lãnh đạo, hoàn thiện bản thân mỗ
                             </div>
                         </div>
                         <div class="sm-col sm-col-3">
-                            <ul class="list-reset mx3">
-                                <li class="mb3"><h6>Thời gian hoạt động</h6></li>
-                                <li class="mb2">Thứ 2: 8h30 - 18h00</li>
-                                <li class="mb2">Thứ 3: 8h30 - 18h00</li>
-                                <li class="mb2">Thứ 4: 8h30 - 18h00</li>
-                                <li class="mb2">Thứ 5: 8h30 - 18h00</li>
-                                <li class="mb2">Thứ 6: 8h30 - 18h00</li>
-                                <li class="mb2">Thứ 7: 8h30 - 12h00</li>    
-                            </ul>
+                            <h6 class="mb3 mx3">Thời gian hoạt động</h6>
+                            
+                            <div class="row">
+                                <ul class="list-reset mx3">
+                                    <li class="mb2">Thứ 2: 8h30 - 18h00</li>
+                                    <li class="mb2">Thứ 3: 8h30 - 18h00</li>
+                                    <li class="mb2">Thứ 4: 8h30 - 18h00</li>
+                                </ul>
+                                <ul class="list-reset mx3">
+                                    <li class="mb2">Thứ 5: 8h30 - 18h00</li>
+                                    <li class="mb2">Thứ 6: 8h30 - 18h00</li>
+                                    <li class="mb2">Thứ 7: 8h30 - 12h00</li>    
+                                </ul>
+                            </div>
                         </div>
                         <div class="sm-col sm-col-3">
+                            <h6 class="mb3 mx3">Thông tin liên hệ</h6>
                             <ul class="list-reset mx3">
-                                <li class="mb3"><h6>Thông tin liên hệ</h6></li>
                                 <li class="mb2">
                                     <div class="flex">
                                         <div class="icon mr1">
@@ -697,8 +726,8 @@ Tại GTV, bạn sẽ có cơ hội lãnh đạo, hoàn thiện bản thân mỗ
                               </ul>
                         </div>
                         <div class="sm-col sm-col-3">
+                            <h6 class="mb3 mx3">Follow us</h6>
                             <ul class="list-reset mx3">
-                                <li class="mb3"><h6>Follow us</h6></li>
                                 <li class="mb2">
                                     <form action="">
                                         <div class="form-group flex">
@@ -725,20 +754,24 @@ Tại GTV, bạn sẽ có cơ hội lãnh đạo, hoàn thiện bản thân mỗ
                     <div class="footer-bottom">
                         <div class="flex">
                             <p>© 2021 GTV SEO. All rights reserved</p>
-                            <ul class="list-reset">
-                            <li class="inline-block">
-                                <a href="">Terms & Conditions</a>
-                            </li>
-                            <li class="inline-block">
-                                <a href="#">Privacy Policy</a>
-                            </li>
-                            <li class="inline-block">
-                                <a href="#">Sitemap</a>
-                            </li>
-                            <li class="inline-block">
-                                <a href="#">Disclaimer</a>
-                            </li>
-                            </ul>
+                            <div class="row flex">
+                                <ul class="list-reset">
+                                    <li class="inline-block">
+                                        <a href="">Terms & Conditions</a>
+                                    </li>
+                                    <li class="inline-block">
+                                        <a href="#">Privacy Policy</a>
+                                    </li>
+                                    </ul>
+                                    <ul class="list-reset">
+                                        <li class="inline-block">
+                                            <a href="#">Sitemap</a>
+                                        </li>
+                                        <li class="inline-block br0">
+                                            <a href="#">Disclaimer</a>
+                                        </li>
+                                    </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -749,57 +782,8 @@ Tại GTV, bạn sẽ có cơ hội lãnh đạo, hoàn thiện bản thân mỗ
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
-    <script>
-    $('.slider__khach-noi-gi').slick({
-        dots: true,
-        infinite: false,
-        autoplay: true,
-        speed: 500,
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        infinite: false,
-        autoplay: true,
-        speed: 500,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 500,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 500,
-        dots: true
-      }
-    }
-    ]
-    });
-    $('ul.tabs li').click(function(){
-		var tab_id = $(this).attr('data-tab');
-
-		$('ul.tabs li').removeClass('current');
-		$('.tab-content').removeClass('current');
-
-		$(this).addClass('current');
-		$("#"+tab_id).addClass('current');
-	});
-    </script>
+    <script src="https://cdn.jsdelivr.net/holder/2.9.3/holder.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="style.js"></script>
 </body>
 </html>

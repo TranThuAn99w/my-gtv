@@ -1,15 +1,18 @@
 @import "mixins";
-
 body {
   margin: 0;
-  font-family: "Encode Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #18191f;
   h1,
   h2,
   h3,
   h4 {
     margin: 0;
-    font-family: "Inter", sans-serif;
+  }
+  a {
+    img {
+      width: 100%;
+    }
   }
 }
 .bg-light {
@@ -75,6 +78,12 @@ body {
           border-radius: 10px;
           background-color: white;
           box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+          @include respond-tabLand {
+            padding: 20px 15px;
+            &.mr3 {
+              margin-right: 15px !important;
+            }
+          }
           &__icon {
             width: 32px;
             height: 32px;
@@ -84,12 +93,18 @@ body {
           }
           &__body {
             padding: 60px 0;
+            @include respond-tabLand {
+              padding: 37px 0;
+            }
             h4 {
               font-size: 24px;
               line-height: 32px;
-              font-family: Inter, sans-serif;
+              font-family: "Inter", sans-serif;
               margin: 12px 0;
               min-height: 94px;
+              @include respond-tabLand {
+                font-size: 23px;
+              }
             }
             p {
               line-height: 26px;
@@ -133,11 +148,12 @@ body {
       text-decoration: none;
       padding: 10px 20px;
       border-radius: 6px;
-      font-size: 18px;
     }
   }
   &__thanh-tuu {
-    background-color: black;
+    background: url("bg-dark-resize.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     .content {
       color: #f4f5f7;
       &__boxs {
@@ -145,11 +161,11 @@ body {
           justify-content: center;
         }
         .box {
-          width: 255px;
+          max-width: 255px;
           padding: 0 15px;
           position: relative;
           &__head {
-            h2 {
+            h4 {
               font-size: 48px;
             }
           }
@@ -162,7 +178,7 @@ body {
             content: "";
             height: 100px;
             width: 1px;
-            background-color: #f4f5f7;
+            border-right: 1px solid #f4f5f7;
             position: absolute;
             right: 0;
             top: 20%;
@@ -187,7 +203,7 @@ body {
         content: "";
         width: 149px;
         height: 125px;
-        background-color: rgba(6, 179, 255, 0.5);
+        background-color: rgba(6, 179, 255, 0.7);
         position: absolute;
         top: 0;
         left: 0;
@@ -200,7 +216,7 @@ body {
         text-align: left;
       }
       &__text {
-        background-color: #f4f5f7;
+        background-color: #fff;
         border-radius: 10px;
         padding: 73px 32px;
         position: relative;
@@ -218,7 +234,7 @@ body {
           transform: rotate(45deg);
           position: absolute;
           bottom: -12px;
-          background-color: #f4f5f7;
+          background-color: #fff;
         }
       }
       &__tagname {
@@ -270,6 +286,10 @@ body {
     }
   }
   &__seo {
+    #btn-show-tabs,
+    .tabs-mb {
+      display: none;
+    }
     ul {
       &.tabs {
         margin: 0px;
@@ -283,6 +303,11 @@ body {
           padding: 32px;
           cursor: pointer;
           font-size: 18px;
+          &:hover {
+            background-color: #eeeff4;
+            font-weight: 600;
+          }
+
           &.current {
             background: #f4f5f7;
             font-weight: 600;
@@ -293,7 +318,7 @@ body {
     .tab-content {
       display: none;
       background: white;
-      padding: 30px 0;
+      padding: 30px;
       &__text {
         text-align: left;
         width: 750px;
@@ -304,6 +329,9 @@ body {
           min-height: 160px;
           font-size: 18px;
           line-height: 32px;
+          @include respond-tabPort {
+            font-size: 16px !important;
+          }
         }
       }
       .btns {
@@ -337,19 +365,18 @@ footer {
   color: #f4f5f7;
   .footer-top {
     padding: 80px 0 20px;
+    h6 {
+      margin-top: 0;
+      padding: 0;
+      font-size: 20px;
+      line-height: 32px;
+    }
     ul {
+      margin-top: 0;
       li {
-        .flex {
-          align-items: center;
-        }
-        h6 {
-          margin: 0;
-          padding: 0;
-          font-size: 20px;
-          line-height: 32px;
-        }
         .icon {
           width: 20px;
+          padding-top: 2px;
         }
         .form-group {
           padding: 0;
@@ -373,6 +400,10 @@ footer {
             border: none;
             cursor: pointer;
           }
+        }
+        a {
+          display: flex;
+          align-items: center;
         }
       }
     }
@@ -405,8 +436,497 @@ footer {
             padding: 0 10px;
             margin-right: 0;
           }
+          &.br0 {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+@include respond-tabLand {
+  .container {
+    width: calc(100% - 50px);
+    .content {
+      &__head {
+        h2 {
+          font-size: 40px;
+        }
+      }
+      &__cards {
+        .max-width-3 {
+          max-width: 41rem;
+        }
+        .mb3 {
+          margin-bottom: 15px !important;
+        }
+      }
+      &__boxs {
+        .box {
+          max-width: 200px;
+          &__body {
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .ss {
+    &__head {
+      &::after {
+        bottom: -40px;
+      }
+    }
+    &__team {
+      .content {
+        .card {
+          padding: 0;
+        }
+      }
+    }
+    &__seo {
+      ul {
+        &.tabs {
+          li {
+            padding: 25px 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@include respond-tabPort {
+  .ss {
+    p {
+      font-size: 17px;
+      line-height: 32px;
+    }
+    .slick {
+      &-arrow {
+        font-size: 28px;
+        z-index: 1;
+        position: absolute;
+        top: 40%;
+        &.prev {
+          left: 0;
+        }
+        &.next {
+          right: 0;
+        }
+      }
+      &-dots {
+        bottom: -30px;
+        li {
+          button {
+            width: 5px;
+            height: 5px;
+            border-radius: 30px;
+            background-color: #f4f5f7;
+            border: 1px solid #276ae3;
+            &::before {
+              content: "";
+              color: transparent;
+            }
+          }
+          &.slick-active {
+            button {
+              background-color: #276ae3;
+            }
+          }
+        }
+      }
+    }
+    &__head {
+      &::after {
+        bottom: -55px;
+      }
+    }
+    &__gia-tri,
+    &__team,
+    &__van-hoa {
+      .content {
+        a {
+          font-size: 18px !important;
+        }
+        &__cards {
+          .flex {
+            flex-direction: column;
+          }
+          .card {
+            width: 95%;
+            margin-bottom: 25px;
+            &__body {
+              padding: 25px 0;
+              h4 {
+                font-size: 28px;
+                line-height: 42px;
+              }
+            }
+            &.mr3 {
+              margin-right: 0px !important;
+            }
+          }
+          .max-width-3 {
+            max-width: 50rem !important;
+          }
+          .mb3 {
+            margin-bottom: 0px !important;
+          }
+        }
+      }
+    }
+    &__thanh-tuu {
+      .box {
+        width: 145px;
+        padding: 0 10px !important;
+        margin-bottom: 25px !important;
+        &__head {
+          h4 {
+            font-size: 28px !important;
+            line-height: 40px !important;
+          }
+        }
+        &__body {
+          p {
+            line-height: 25px !important;
+          }
+        }
+        &.mb4 {
+          margin-bottom: 0;
+        }
+        &.box-br::after {
+          top: 15% !important;
+        }
+      }
+    }
+    &__khach-noi-gi {
+      .bg-img {
+        top: 85px;
+        right: 15px;
+      }
+      .content {
+        &__head {
+          width: 65%;
+          margin-left: 15px;
+        }
+        &__text {
+          padding: 15px !important;
+          p {
+            min-height: 200px !important;
+          }
+        }
+      }
+    }
+    &__seo {
+      .tab {
+        &-content {
+          .flex {
+            flex-direction: column;
+          }
+          &__text {
+            width: 100%;
+            margin: 0 0 50px;
+            p {
+              font-size: 18px;
+              line-height: 32px;
+            }
+            .btns {
+              a {
+                font-size: 18px !important;
+              }
+            }
+          }
+        }
+      }
+      ul {
+        &.tabs {
+          li {
+            font-size: 15px;
+            padding: 20px 12px;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    font-size: 15px !important;
+    .mr2 {
+      margin-right: 10 !important;
+    }
+    .mx3 {
+      margin-right: 10px !important;
+      margin-left: 10px !important;
+    }
+    h6 {
+      font-size: 18px !important;
+    }
+  }
+}
+@include respond-phone {
+  .container {
+    width: calc(100% - 30px);
+    .content {
+      &__head {
+        h2 {
+          font-size: 28px;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+  .ss {
+    padding: 30px 0 50px;
+    &__head {
+      .content {
+        span {
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+      &::after {
+        bottom: -76px;
+      }
+    }
+    &__gia-tri,
+    &__team,
+    &__van-hoa {
+      .content {
+        &__head {
+          padding: 0 30px;
+        }
+        &__cards {
+          .flex {
+            flex-direction: column;
+          }
+          .card {
+            width: auto;
+            margin-bottom: 15px;
+            padding: 16px !important;
+            &.mr3 {
+              margin-right: 0 !important;
+            }
+            &__body {
+              padding: 10px 0;
+              text-align: left;
+              h4 {
+                font-size: 18px;
+                line-height: 28px;
+                min-height: auto;
+              }
+              p {
+                font-size: 14px;
+                line-height: 24px;
+              }
+            }
+            &__img {
+              display: flex;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+    &__team {
+      .content {
+        .mb4 {
+          margin-bottom: 0 !important;
+        }
+        .card {
+          &__body {
+            text-align: center !important;
+            h4 {
+              font-size: 24px;
+              line-height: 32px;
+            }
+            p {
+              font-size: 16px;
+              line-height: 26px;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+    &__van-hoa {
+      .mt4 {
+        margin-top: 0;
+      }
+      .row.mb3 {
+        margin-bottom: 0 !important;
+      }
+      .btn__link {
+        display: none;
+      }
+    }
+    &__thanh-tuu {
+      .box {
+        width: 160px;
+        margin-bottom: 20px !important;
+        &__head {
+          h4 {
+            font-size: 28px !important;
+            line-height: 40px !important;
+          }
+        }
+        &__body {
+          p {
+            font-size: 14px !important;
+            line-height: 24px !important;
+          }
+        }
+        &.mb4 {
+          margin-bottom: 0;
+        }
+        &.mb-br.box-br::after {
+          display: none;
+        }
+        &.box-br::after {
+          top: 10% !important;
+        }
+      }
+    }
+    &__khach-noi-gi {
+      padding: 50px 0 70px;
+      .mr3 {
+        margin-right: 0 !important;
+      }
+      .bg-img {
+        top: 90px;
+        right: 30px;
+        &::after {
+          height: 80px;
+        }
+      }
+      .content {
+        &__head {
+          width: 65%;
+        }
+        &__text {
+          padding: 15px !important;
+        }
+      }
+    }
+    &__seo {
+      .container {
+        width: 100% !important;
+      }
+      .tab {
+        &-content {
+          .flex {
+            flex-direction: column;
+          }
+          &__text {
+            width: 100%;
+            margin: 0 0 50px;
+            p {
+              font-size: 14px;
+              line-height: 24px;
+            }
+            .btns {
+              display: flex;
+              a {
+                padding: 15px 25px !important;
+                font-size: 14px !important;
+              }
+            }
+          }
+        }
+      }
+      .tabs {
+        display: none;
+      }
+      .tabs-mb {
+        display: block;
+        #btn-show-tabs {
+          display: block;
+          width: 100%;
+          padding: 25px 0;
+          text-decoration: none;
+          text-align: center;
+          font-weight: 600;
+          color: #18191f;
+          font-size: 18px;
+          background: #eeeff4;
+          border: none;
+          position: relative;
+          font-family: "Encode Sans", sans-serif;
+          .fa-angle-down {
+            position: absolute;
+            right: 20px;
+            overflow: hidden;
+            font-size: 24px;
+          }
+        }
+        #tab-list {
+          flex-direction: column;
+          position: absolute;
+          width: 100%;
+          background-color: #eeeff4;
+          li {
+            padding: 15px 0;
+            border-top: 1px solid #fff;
+          }
+        }
+        .hide {
+          display: none;
+        }
+        .show {
+          display: flex;
+        }
+      }
+    }
+  }
+  .slick {
+    &-arrow {
+      font-size: 28px;
+      z-index: 1;
+      position: absolute;
+      top: 40%;
+      &.prev {
+        left: 0;
+      }
+      &.next {
+        right: 0;
+      }
+    }
+    &-dots {
+      bottom: -30px;
+      li {
+        button {
+          width: 5px;
+          height: 5px;
+          border-radius: 30px;
+          background-color: #f4f5f7;
+          border: 1px solid #276ae3;
+          &::before {
+            content: "";
+            color: transparent;
+          }
+        }
+        &.slick-active {
+          button {
+            background-color: #276ae3;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .row {
+      display: flex;
+    }
+    .footer-bottom {
+      .flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      ul {
+        li {
           &:last-child {
-            border-right: none;
+            border: none;
           }
         }
       }
