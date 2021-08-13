@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
@@ -35,6 +36,10 @@ body a img {
   font-weight: 800;
   font-size: 48px;
   line-height: 64px;
+}
+
+.btn__link:hover {
+  text-decoration: underline !important;
 }
 
 .ss {
@@ -101,14 +106,12 @@ body a img {
 .ss__gia-tri .content__cards .card__icon, .ss__team .content__cards .card__icon, .ss__van-hoa .content__cards .card__icon {
   width: 32px;
   height: 32px;
-}
-
-.ss__gia-tri .content__cards .card__icon img, .ss__team .content__cards .card__icon img, .ss__van-hoa .content__cards .card__icon img {
-  width: 100%;
+  text-align: left;
 }
 
 .ss__gia-tri .content__cards .card__body, .ss__team .content__cards .card__body, .ss__van-hoa .content__cards .card__body {
-  padding: 60px 0;
+  padding: 56px 0 0;
+  text-align: left;
 }
 
 @media (max-width: 1200px) {
@@ -121,7 +124,7 @@ body a img {
   font-size: 24px;
   line-height: 32px;
   font-family: "Inter", sans-serif;
-  margin: 12px 0;
+  margin: 0 0 12px;
   min-height: 94px;
 }
 
@@ -133,6 +136,7 @@ body a img {
 
 .ss__gia-tri .content__cards .card__body p, .ss__team .content__cards .card__body p, .ss__van-hoa .content__cards .card__body p {
   line-height: 26px;
+  margin-bottom: 0;
 }
 
 .ss__team .content .card {
@@ -142,6 +146,7 @@ body a img {
 
 .ss__team .content .card__body {
   padding: 0;
+  text-align: center;
 }
 
 .ss__team .content .card__body h4 {
@@ -167,7 +172,7 @@ body a img {
 }
 
 .ss__thanh-tuu {
-  background: url("bg-dark-resize.png");
+  background: url("bg-about-resize.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -335,13 +340,19 @@ body a img {
   margin: 0px;
   padding: 0px;
   list-style: none;
+  border-top: 2px solid #f4f5f7;
   border-bottom: 2px solid #f4f5f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .ss__seo ul.tabs li {
   background: none;
   color: #18191f;
-  display: inline-block;
   padding: 32px;
   cursor: pointer;
   font-size: 18px;
@@ -349,7 +360,6 @@ body a img {
 
 .ss__seo ul.tabs li:hover {
   background-color: #eeeff4;
-  font-weight: 600;
 }
 
 .ss__seo ul.tabs li.current {
@@ -763,6 +773,9 @@ footer .footer-bottom .flex ul li.br0 {
   .ss__van-hoa .btn__link {
     display: none;
   }
+  .ss__van-hoa .content__head {
+    padding: 0 10px;
+  }
   .ss__thanh-tuu .box {
     width: 160px;
     margin-bottom: 20px !important;
@@ -806,6 +819,9 @@ footer .footer-bottom .flex ul li.br0 {
   .ss__seo .container {
     width: 100% !important;
   }
+  .ss__seo .container .content__head h2 {
+    padding: 0 20px;
+  }
   .ss__seo .tab-content .flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -826,14 +842,17 @@ footer .footer-bottom .flex ul li.br0 {
     display: flex;
   }
   .ss__seo .tab-content__text .btns a {
-    padding: 15px 25px !important;
+    padding: 15px 20px !important;
     font-size: 14px !important;
   }
-  .ss__seo .tabs {
-    display: none;
+  .ss__seo .tab-đefault {
+    display: none !important;
   }
   .ss__seo .tabs-mb {
     display: block;
+  }
+  .ss__seo .tabs-mb .tabs li {
+    text-align: center;
   }
   .ss__seo .tabs-mb #btn-show-tabs {
     display: block;
@@ -862,7 +881,7 @@ footer .footer-bottom .flex ul li.br0 {
             flex-direction: column;
     position: absolute;
     width: 100%;
-    background-color: #eeeff4;
+    background-color: #fff;
   }
   .ss__seo .tabs-mb #tab-list li {
     padding: 15px 0;

@@ -32,6 +32,11 @@ body {
     }
   }
 }
+.btn__link {
+  &:hover {
+    text-decoration: underline !important;
+  }
+}
 .ss {
   padding: 80px 0 100px;
   &__head {
@@ -87,12 +92,11 @@ body {
           &__icon {
             width: 32px;
             height: 32px;
-            img {
-              width: 100%;
-            }
+            text-align: left;
           }
           &__body {
-            padding: 60px 0;
+            padding: 56px 0 0;
+            text-align: left;
             @include respond-tabLand {
               padding: 37px 0;
             }
@@ -100,7 +104,7 @@ body {
               font-size: 24px;
               line-height: 32px;
               font-family: "Inter", sans-serif;
-              margin: 12px 0;
+              margin: 0 0 12px;
               min-height: 94px;
               @include respond-tabLand {
                 font-size: 23px;
@@ -108,6 +112,7 @@ body {
             }
             p {
               line-height: 26px;
+              margin-bottom: 0;
             }
           }
         }
@@ -120,6 +125,7 @@ body {
         box-shadow: none;
         &__body {
           padding: 0;
+          text-align: center;
           h4 {
             min-height: auto;
           }
@@ -151,7 +157,7 @@ body {
     }
   }
   &__thanh-tuu {
-    background: url("bg-dark-resize.png");
+    background: url("bg-about-resize.png");
     background-repeat: no-repeat;
     background-size: cover;
     .content {
@@ -295,17 +301,20 @@ body {
         margin: 0px;
         padding: 0px;
         list-style: none;
+        border-top: 2px solid #f4f5f7;
         border-bottom: 2px solid #f4f5f7;
+        display: flex;
+        justify-content: center;
         li {
           background: none;
           color: #18191f;
-          display: inline-block;
+          // display: inline-block;
           padding: 32px;
           cursor: pointer;
           font-size: 18px;
           &:hover {
             background-color: #eeeff4;
-            font-weight: 600;
+            // font-weight: 600;
           }
 
           &.current {
@@ -759,6 +768,9 @@ footer {
       .btn__link {
         display: none;
       }
+      .content__head {
+        padding: 0 10px;
+      }
     }
     &__thanh-tuu {
       .box {
@@ -811,6 +823,11 @@ footer {
     &__seo {
       .container {
         width: 100% !important;
+        .content__head {
+          h2 {
+            padding: 0 20px;
+          }
+        }
       }
       .tab {
         &-content {
@@ -827,18 +844,23 @@ footer {
             .btns {
               display: flex;
               a {
-                padding: 15px 25px !important;
+                padding: 15px 20px !important;
                 font-size: 14px !important;
               }
             }
           }
         }
       }
-      .tabs {
-        display: none;
+      .tab-đefault {
+        display: none !important;
       }
       .tabs-mb {
         display: block;
+        .tabs {
+          li {
+            text-align: center;
+          }
+        }
         #btn-show-tabs {
           display: block;
           width: 100%;
@@ -863,7 +885,7 @@ footer {
           flex-direction: column;
           position: absolute;
           width: 100%;
-          background-color: #eeeff4;
+          background-color: #fff;
           li {
             padding: 15px 0;
             border-top: 1px solid #fff;
