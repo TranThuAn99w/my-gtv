@@ -694,6 +694,9 @@ footer .footer-bottom .flex ul li.br0 {
 }
 
 @media (max-width: 600px) {
+  body p {
+    font-size: 14px !important;
+  }
   .container {
     width: calc(100% - 30px);
   }
@@ -943,6 +946,64 @@ footer .footer-bottom .flex ul li.br0 {
   }
   footer .footer-bottom ul li:last-child {
     border: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: calc(100% - 20px);
+  }
+  .ss__head::after {
+    bottom: -80px;
+  }
+  .ss__gia-tri .content__head, .ss__team .content__head, .ss__van-hoa .content__head {
+    padding: 0 20px;
+  }
+  .ss__gia-tri .content__cards .card, .ss__team .content__cards .card, .ss__van-hoa .content__cards .card {
+    margin-bottom: 10px;
+  }
+  .ss__thanh-tuu .box {
+    width: 150px;
+  }
+  .ss__khach-noi-gi .bg-img {
+    top: 50px;
+    right: 20px;
+    width: 90px;
+    height: 90px;
+  }
+  .ss__khach-noi-gi .bg-img::after {
+    width: 100%;
+    height: 80px;
+  }
+  .ss__seo .tab-content__img img {
+    width: 100%;
+    height: 100%;
+  }
+  .ss__seo .tab-content {
+    padding: 30px 10px;
+  }
+  .ss__seo .tab-content__text .content__head h2 {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 330px) {
+  .ss__head::after {
+    bottom: -81px;
+  }
+  .ss__thanh-tuu .box {
+    width: 130px;
+  }
+  .ss__seo .tab-content__img img {
+    width: 100%;
+    height: 100%;
+  }
+  .ss__seo .tab-content {
+    padding: 30px 10px;
+  }
+  .ss__seo .tab-content__text .btns a {
+    font-size: 13px !important;
+    padding: 15px 10px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

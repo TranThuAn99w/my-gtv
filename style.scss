@@ -674,6 +674,11 @@ footer {
   }
 }
 @include respond-phone {
+  body {
+    p {
+      font-size: 14px !important;
+    }
+  }
   .container {
     width: calc(100% - 30px);
     .content {
@@ -949,6 +954,104 @@ footer {
         li {
           &:last-child {
             border: none;
+          }
+        }
+      }
+    }
+  }
+}
+@include respond-mini-phone {
+  .container {
+    width: calc(100% - 20px);
+  }
+  .ss {
+    &__head {
+      &::after {
+        bottom: -80px;
+      }
+    }
+    &__gia-tri,
+    &__team,
+    &__van-hoa {
+      .content {
+        &__head {
+          padding: 0 20px;
+        }
+        &__cards {
+          .card {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    &__thanh-tuu {
+      .box {
+        width: 150px;
+      }
+    }
+    &__khach-noi-gi {
+      .bg-img {
+        top: 50px;
+        right: 20px;
+        width: 90px;
+        height: 90px;
+        &::after {
+          width: 100%;
+          height: 80px;
+        }
+      }
+    }
+    &__seo {
+      .tab-content__img {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .tab-content {
+        padding: 30px 10px;
+      }
+      .tab-content__text {
+        .content__head {
+          h2 {
+            padding: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
+@include respond-super-mini-phone {
+  .ss {
+    &__head {
+      &::after {
+        bottom: -81px;
+      }
+    }
+    &__thanh-tuu {
+      .box {
+        width: 130px;
+      }
+    }
+    &__seo {
+      .tab-content__img {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .tab-content {
+        padding: 30px 10px;
+      }
+      .tab {
+        &-content {
+          &__text {
+            .btns {
+              a {
+                font-size: 13px !important;
+                padding: 15px 10px !important;
+              }
+            }
           }
         }
       }
