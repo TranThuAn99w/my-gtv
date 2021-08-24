@@ -1029,8 +1029,15 @@ footer .footer-bottom .flex ul li.br0 {
   .container h2 {
     font-size: 24px !important;
   }
+  .container .content__head p {
+    font-size: 13px !important;
+  }
   .ss__head::after {
     bottom: -80px;
+  }
+  .ss__head p span {
+    font-size: 13px !important;
+    line-height: 24px !important;
   }
   .ss__gia-tri .content__head, .ss__team .content__head, .ss__van-hoa .content__head {
     padding: 0 20px;
@@ -1038,8 +1045,11 @@ footer .footer-bottom .flex ul li.br0 {
   .ss__gia-tri .content__cards .card, .ss__team .content__cards .card, .ss__van-hoa .content__cards .card {
     margin-bottom: 10px;
   }
+  .ss__gia-tri .content__cards .card h4, .ss__team .content__cards .card h4, .ss__van-hoa .content__cards .card h4 {
+    font-size: 17px;
+  }
   .ss__thanh-tuu .box {
-    width: 150px;
+    width: 130px;
   }
   .ss__thanh-tuu .box p {
     font-size: 12px !important;
@@ -1047,6 +1057,10 @@ footer .footer-bottom .flex ul li.br0 {
   }
   .ss__thanh-tuu .box h4 {
     font-size: 24px !important;
+  }
+  .ss__khach-noi-gi p {
+    font-size: 13px !important;
+    line-height: 24px !important;
   }
   .ss__khach-noi-gi .bg-img {
     top: 50px;
@@ -1069,8 +1083,8 @@ footer .footer-bottom .flex ul li.br0 {
     padding: 30px 10px;
   }
   .ss__seo .tab-content__text p {
-    font-size: 12px !important;
-    line-height: 20px !important;
+    font-size: 13px !important;
+    line-height: 24px !important;
   }
   .ss__seo .tab-content__text .content__head h2 {
     padding: 0 !important;
@@ -1090,7 +1104,10 @@ footer .footer-bottom .flex ul li.br0 {
     width: 130px;
   }
   .ss__gia-tri .content__head, .ss__team .content__head, .ss__van-hoa .content__head {
-    padding: 0;
+    padding: 0 15px;
+  }
+  .ss__gia-tri .content .card p, .ss__team .content .card p, .ss__van-hoa .content .card p {
+    margin-right: 5px;
   }
   .ss__seo .tab-content__img img {
     width: 100%;

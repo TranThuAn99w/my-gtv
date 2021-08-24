@@ -1052,11 +1052,22 @@ footer {
     h2 {
       font-size: 24px !important;
     }
+    .content__head {
+      p {
+        font-size: 13px !important;
+      }
+    }
   }
   .ss {
     &__head {
       &::after {
         bottom: -80px;
+      }
+      p {
+        span {
+          font-size: 13px !important;
+          line-height: 24px !important;
+        }
       }
     }
     &__gia-tri,
@@ -1069,13 +1080,16 @@ footer {
         &__cards {
           .card {
             margin-bottom: 10px;
+            h4 {
+              font-size: 17px;
+            }
           }
         }
       }
     }
     &__thanh-tuu {
       .box {
-        width: 150px;
+        width: 130px;
         p {
           font-size: 12px !important;
           line-height: 20px !important;
@@ -1086,6 +1100,10 @@ footer {
       }
     }
     &__khach-noi-gi {
+      p {
+        font-size: 13px !important;
+        line-height: 24px !important;
+      }
       .bg-img {
         top: 50px;
         right: 20px;
@@ -1116,8 +1134,8 @@ footer {
       }
       .tab-content__text {
         p {
-          font-size: 12px !important;
-          line-height: 20px !important;
+          font-size: 13px !important;
+          line-height: 24px !important;
         }
         .content__head {
           h2 {
@@ -1152,7 +1170,12 @@ footer {
     &__van-hoa {
       .content {
         &__head {
-          padding: 0;
+          padding: 0 15px;
+        }
+        .card {
+          p {
+            margin-right: 5px;
+          }
         }
       }
     }
