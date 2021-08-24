@@ -29,6 +29,10 @@ body {
         font-size: 48px;
         line-height: 64px;
       }
+      P {
+        font-size: 18px;
+        line-height: 32px;
+      }
     }
   }
 }
@@ -68,7 +72,7 @@ body {
   &__van-hoa {
     .content {
       &__head {
-        margin-bottom: 50px !important;
+        margin-bottom: 48px !important;
         p {
           margin: 10px 0;
         }
@@ -79,12 +83,12 @@ body {
         }
         .card {
           width: 100%;
-          padding: 40px 30px;
+          padding: 40px 32px;
           border-radius: 10px;
           background-color: white;
           box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
           @include respond-tabLand {
-            padding: 20px 15px;
+            padding: 32px 5px 32px 15px;
             &.mr3 {
               margin-right: 15px !important;
             }
@@ -97,9 +101,9 @@ body {
           &__body {
             padding: 56px 0 0;
             text-align: left;
-            @include respond-tabLand {
-              padding: 37px 0;
-            }
+            // @include respond-tabLand {
+            //   padding: 37px 0;
+            // }
             h4 {
               font-size: 24px;
               line-height: 32px;
@@ -129,14 +133,26 @@ body {
           h4 {
             min-height: auto;
           }
+          p {
+            font-size: 18px;
+          }
         }
       }
     }
   }
   &__van-hoa {
     .content {
+      &__head {
+        p {
+          padding: 0 17%;
+        }
+      }
       &__cards {
         .card {
+          padding: 40px 35px;
+          @include respond-tabLand {
+            padding: 20px;
+          }
           &__body {
             text-align: left !important;
             h4 {
@@ -167,7 +183,7 @@ body {
           justify-content: center;
         }
         .box {
-          max-width: 255px;
+          max-width: 250px;
           padding: 0 15px;
           position: relative;
           &__head {
@@ -187,7 +203,7 @@ body {
             border-right: 1px solid #f4f5f7;
             position: absolute;
             right: 0;
-            top: 20%;
+            top: 10%;
           }
         }
       }
@@ -457,6 +473,9 @@ footer {
   .container {
     width: calc(100% - 50px);
     .content {
+      p {
+        font-size: 15px;
+      }
       &__head {
         h2 {
           font-size: 40px;
@@ -469,10 +488,15 @@ footer {
         .mb3 {
           margin-bottom: 15px !important;
         }
+        .card {
+          p {
+            padding-right: 1px;
+          }
+        }
       }
       &__boxs {
         .box {
-          max-width: 200px;
+          max-width: 210px;
           &__body {
             p {
               font-size: 15px;
@@ -495,6 +519,7 @@ footer {
         }
       }
     }
+
     &__seo {
       ul {
         &.tabs {
@@ -509,8 +534,19 @@ footer {
 @include respond-tabPort {
   .ss {
     p {
-      font-size: 17px;
+      font-size: 15px;
       line-height: 32px;
+    }
+    h4.pr2,
+    h4.pr3 {
+      padding-right: 0;
+    }
+    .content {
+      &__head {
+        h2 {
+          font-size: 35px;
+        }
+      }
     }
     .slick {
       &-arrow {
@@ -551,23 +587,38 @@ footer {
       &::after {
         bottom: -55px;
       }
+      .content {
+        p {
+          span {
+            font-size: 15px;
+            line-height: 32px;
+          }
+        }
+      }
     }
     &__gia-tri,
     &__team,
     &__van-hoa {
       .content {
+        &__head {
+          p {
+            padding: 0 100px;
+          }
+        }
+
         a {
-          font-size: 18px !important;
+          font-size: 15px !important;
         }
         &__cards {
           .flex {
             flex-direction: column;
           }
           .card {
-            width: 95%;
+            width: auto;
             margin-bottom: 25px;
+            padding: 20px 16px;
             &__body {
-              padding: 25px 0;
+              padding: 32px 0 20px;
               h4 {
                 font-size: 28px;
                 line-height: 42px;
@@ -586,9 +637,21 @@ footer {
         }
       }
     }
+    &__van-hoa {
+      .content {
+        &__head {
+          p {
+            padding: 0 32px;
+          }
+        }
+      }
+      .mt4 {
+        margin-top: 32px;
+      }
+    }
     &__thanh-tuu {
       .box {
-        width: 145px;
+        width: 155px;
         padding: 0 10px !important;
         margin-bottom: 25px !important;
         &__head {
@@ -638,12 +701,12 @@ footer {
             width: 100%;
             margin: 0 0 50px;
             p {
-              font-size: 18px;
+              font-size: 15px;
               line-height: 32px;
             }
             .btns {
               a {
-                font-size: 18px !important;
+                font-size: 15px !important;
               }
             }
           }
@@ -683,9 +746,15 @@ footer {
     width: calc(100% - 30px);
     .content {
       &__head {
+        padding: 0;
         h2 {
           font-size: 28px;
           line-height: 40px;
+        }
+        p {
+          padding: 0;
+          font-size: 15px;
+          line-height: 28px;
         }
       }
     }
@@ -707,22 +776,17 @@ footer {
     &__team,
     &__van-hoa {
       .content {
-        &__head {
-          padding: 0 30px;
-        }
         &__cards {
           .flex {
             flex-direction: column;
           }
           .card {
-            width: auto;
             margin-bottom: 15px;
             padding: 16px !important;
             &.mr3 {
               margin-right: 0 !important;
             }
             &__body {
-              padding: 10px 0;
               text-align: left;
               h4 {
                 font-size: 18px;
@@ -842,9 +906,12 @@ footer {
           &__text {
             width: 100%;
             margin: 0 0 50px;
+            h2 {
+              padding: 0 !important;
+            }
             p {
-              font-size: 14px;
-              line-height: 24px;
+              font-size: 15px;
+              line-height: 28px;
             }
             .btns {
               display: flex;
@@ -941,6 +1008,20 @@ footer {
     }
   }
   footer {
+    font-size: 13px !important;
+    line-height: 25px !important;
+    h6.mb3 {
+      margin-bottom: 24px;
+    }
+    ul {
+      margin: 0;
+    }
+    .sm-col {
+      margin-bottom: 48px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
     .row {
       display: flex;
     }
@@ -952,6 +1033,7 @@ footer {
       }
       ul {
         li {
+          padding: 3px 5px;
           &:last-child {
             border: none;
           }
@@ -963,6 +1045,13 @@ footer {
 @include respond-mini-phone {
   .container {
     width: calc(100% - 20px);
+    p {
+      font-size: 12px !important;
+      line-height: 20px !important;
+    }
+    h2 {
+      font-size: 24px !important;
+    }
   }
   .ss {
     &__head {
@@ -987,6 +1076,13 @@ footer {
     &__thanh-tuu {
       .box {
         width: 150px;
+        p {
+          font-size: 12px !important;
+          line-height: 20px !important;
+        }
+        h4 {
+          font-size: 24px !important;
+        }
       }
     }
     &__khach-noi-gi {
@@ -1002,6 +1098,13 @@ footer {
       }
     }
     &__seo {
+      .content {
+        &__head {
+          h2 {
+            padding: 0 32px !important;
+          }
+        }
+      }
       .tab-content__img {
         img {
           width: 100%;
@@ -1012,9 +1115,14 @@ footer {
         padding: 30px 10px;
       }
       .tab-content__text {
+        p {
+          font-size: 12px !important;
+          line-height: 20px !important;
+        }
         .content__head {
           h2 {
             padding: 0 !important;
+            font-size: 24px !important;
           }
         }
       }
@@ -1024,6 +1132,12 @@ footer {
 @include respond-super-mini-phone {
   .ss {
     &__head {
+      p {
+        span {
+          font-size: 13px !important;
+          line-height: 25px !important;
+        }
+      }
       &::after {
         bottom: -81px;
       }
@@ -1031,6 +1145,15 @@ footer {
     &__thanh-tuu {
       .box {
         width: 130px;
+      }
+    }
+    &__gia-tri,
+    &__team,
+    &__van-hoa {
+      .content {
+        &__head {
+          padding: 0;
+        }
       }
     }
     &__seo {

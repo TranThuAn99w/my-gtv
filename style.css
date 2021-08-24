@@ -38,6 +38,11 @@ body a img {
   line-height: 64px;
 }
 
+.container .content__head P {
+  font-size: 18px;
+  line-height: 32px;
+}
+
 .btn__link:hover {
   text-decoration: underline !important;
 }
@@ -72,7 +77,7 @@ body a img {
 }
 
 .ss__gia-tri .content__head, .ss__team .content__head, .ss__van-hoa .content__head {
-  margin-bottom: 50px !important;
+  margin-bottom: 48px !important;
 }
 
 .ss__gia-tri .content__head p, .ss__team .content__head p, .ss__van-hoa .content__head p {
@@ -87,7 +92,7 @@ body a img {
 
 .ss__gia-tri .content__cards .card, .ss__team .content__cards .card, .ss__van-hoa .content__cards .card {
   width: 100%;
-  padding: 40px 30px;
+  padding: 40px 32px;
   border-radius: 10px;
   background-color: white;
   -webkit-box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
@@ -96,7 +101,7 @@ body a img {
 
 @media (max-width: 1200px) {
   .ss__gia-tri .content__cards .card, .ss__team .content__cards .card, .ss__van-hoa .content__cards .card {
-    padding: 20px 15px;
+    padding: 32px 5px 32px 15px;
   }
   .ss__gia-tri .content__cards .card.mr3, .ss__team .content__cards .card.mr3, .ss__van-hoa .content__cards .card.mr3 {
     margin-right: 15px !important;
@@ -112,12 +117,6 @@ body a img {
 .ss__gia-tri .content__cards .card__body, .ss__team .content__cards .card__body, .ss__van-hoa .content__cards .card__body {
   padding: 56px 0 0;
   text-align: left;
-}
-
-@media (max-width: 1200px) {
-  .ss__gia-tri .content__cards .card__body, .ss__team .content__cards .card__body, .ss__van-hoa .content__cards .card__body {
-    padding: 37px 0;
-  }
 }
 
 .ss__gia-tri .content__cards .card__body h4, .ss__team .content__cards .card__body h4, .ss__van-hoa .content__cards .card__body h4 {
@@ -151,6 +150,24 @@ body a img {
 
 .ss__team .content .card__body h4 {
   min-height: auto;
+}
+
+.ss__team .content .card__body p {
+  font-size: 18px;
+}
+
+.ss__van-hoa .content__head p {
+  padding: 0 17%;
+}
+
+.ss__van-hoa .content__cards .card {
+  padding: 40px 35px;
+}
+
+@media (max-width: 1200px) {
+  .ss__van-hoa .content__cards .card {
+    padding: 20px;
+  }
 }
 
 .ss__van-hoa .content__cards .card__body {
@@ -188,7 +205,7 @@ body a img {
 }
 
 .ss__thanh-tuu .content__boxs .box {
-  max-width: 255px;
+  max-width: 250px;
   padding: 0 15px;
   position: relative;
 }
@@ -208,7 +225,7 @@ body a img {
   border-right: 1px solid #f4f5f7;
   position: absolute;
   right: 0;
-  top: 20%;
+  top: 10%;
 }
 
 .ss__khach-noi-gi {
@@ -533,6 +550,9 @@ footer .footer-bottom .flex ul li.br0 {
   .container {
     width: calc(100% - 50px);
   }
+  .container .content p {
+    font-size: 15px;
+  }
   .container .content__head h2 {
     font-size: 40px;
   }
@@ -542,8 +562,11 @@ footer .footer-bottom .flex ul li.br0 {
   .container .content__cards .mb3 {
     margin-bottom: 15px !important;
   }
+  .container .content__cards .card p {
+    padding-right: 1px;
+  }
   .container .content__boxs .box {
-    max-width: 200px;
+    max-width: 210px;
   }
   .container .content__boxs .box__body p {
     font-size: 15px;
@@ -561,8 +584,15 @@ footer .footer-bottom .flex ul li.br0 {
 
 @media (max-width: 900px) {
   .ss p {
-    font-size: 17px;
+    font-size: 15px;
     line-height: 32px;
+  }
+  .ss h4.pr2,
+  .ss h4.pr3 {
+    padding-right: 0;
+  }
+  .ss .content__head h2 {
+    font-size: 35px;
   }
   .ss .slick-arrow {
     font-size: 28px;
@@ -596,8 +626,15 @@ footer .footer-bottom .flex ul li.br0 {
   .ss__head::after {
     bottom: -55px;
   }
+  .ss__head .content p span {
+    font-size: 15px;
+    line-height: 32px;
+  }
+  .ss__gia-tri .content__head p, .ss__team .content__head p, .ss__van-hoa .content__head p {
+    padding: 0 100px;
+  }
   .ss__gia-tri .content a, .ss__team .content a, .ss__van-hoa .content a {
-    font-size: 18px !important;
+    font-size: 15px !important;
   }
   .ss__gia-tri .content__cards .flex, .ss__team .content__cards .flex, .ss__van-hoa .content__cards .flex {
     -webkit-box-orient: vertical;
@@ -606,11 +643,12 @@ footer .footer-bottom .flex ul li.br0 {
             flex-direction: column;
   }
   .ss__gia-tri .content__cards .card, .ss__team .content__cards .card, .ss__van-hoa .content__cards .card {
-    width: 95%;
+    width: auto;
     margin-bottom: 25px;
+    padding: 20px 16px;
   }
   .ss__gia-tri .content__cards .card__body, .ss__team .content__cards .card__body, .ss__van-hoa .content__cards .card__body {
-    padding: 25px 0;
+    padding: 32px 0 20px;
   }
   .ss__gia-tri .content__cards .card__body h4, .ss__team .content__cards .card__body h4, .ss__van-hoa .content__cards .card__body h4 {
     font-size: 28px;
@@ -625,8 +663,14 @@ footer .footer-bottom .flex ul li.br0 {
   .ss__gia-tri .content__cards .mb3, .ss__team .content__cards .mb3, .ss__van-hoa .content__cards .mb3 {
     margin-bottom: 0px !important;
   }
+  .ss__van-hoa .content__head p {
+    padding: 0 32px;
+  }
+  .ss__van-hoa .mt4 {
+    margin-top: 32px;
+  }
   .ss__thanh-tuu .box {
-    width: 145px;
+    width: 155px;
     padding: 0 10px !important;
     margin-bottom: 25px !important;
   }
@@ -668,11 +712,11 @@ footer .footer-bottom .flex ul li.br0 {
     margin: 0 0 50px;
   }
   .ss__seo .tab-content__text p {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 32px;
   }
   .ss__seo .tab-content__text .btns a {
-    font-size: 18px !important;
+    font-size: 15px !important;
   }
   .ss__seo ul.tabs li {
     font-size: 15px;
@@ -700,9 +744,17 @@ footer .footer-bottom .flex ul li.br0 {
   .container {
     width: calc(100% - 30px);
   }
+  .container .content__head {
+    padding: 0;
+  }
   .container .content__head h2 {
     font-size: 28px;
     line-height: 40px;
+  }
+  .container .content__head p {
+    padding: 0;
+    font-size: 15px;
+    line-height: 28px;
   }
   .ss {
     padding: 30px 0 50px;
@@ -714,9 +766,6 @@ footer .footer-bottom .flex ul li.br0 {
   .ss__head::after {
     bottom: -76px;
   }
-  .ss__gia-tri .content__head, .ss__team .content__head, .ss__van-hoa .content__head {
-    padding: 0 30px;
-  }
   .ss__gia-tri .content__cards .flex, .ss__team .content__cards .flex, .ss__van-hoa .content__cards .flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -724,7 +773,6 @@ footer .footer-bottom .flex ul li.br0 {
             flex-direction: column;
   }
   .ss__gia-tri .content__cards .card, .ss__team .content__cards .card, .ss__van-hoa .content__cards .card {
-    width: auto;
     margin-bottom: 15px;
     padding: 16px !important;
   }
@@ -732,7 +780,6 @@ footer .footer-bottom .flex ul li.br0 {
     margin-right: 0 !important;
   }
   .ss__gia-tri .content__cards .card__body, .ss__team .content__cards .card__body, .ss__van-hoa .content__cards .card__body {
-    padding: 10px 0;
     text-align: left;
   }
   .ss__gia-tri .content__cards .card__body h4, .ss__team .content__cards .card__body h4, .ss__van-hoa .content__cards .card__body h4 {
@@ -835,9 +882,12 @@ footer .footer-bottom .flex ul li.br0 {
     width: 100%;
     margin: 0 0 50px;
   }
+  .ss__seo .tab-content__text h2 {
+    padding: 0 !important;
+  }
   .ss__seo .tab-content__text p {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 28px;
   }
   .ss__seo .tab-content__text .btns {
     display: -webkit-box;
@@ -927,6 +977,22 @@ footer .footer-bottom .flex ul li.br0 {
   .slick-dots li.slick-active button {
     background-color: #276ae3;
   }
+  footer {
+    font-size: 13px !important;
+    line-height: 25px !important;
+  }
+  footer h6.mb3 {
+    margin-bottom: 24px;
+  }
+  footer ul {
+    margin: 0;
+  }
+  footer .sm-col {
+    margin-bottom: 48px;
+  }
+  footer .sm-col:last-child {
+    margin-bottom: 0px;
+  }
   footer .row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -944,6 +1010,9 @@ footer .footer-bottom .flex ul li.br0 {
         -ms-flex-align: center;
             align-items: center;
   }
+  footer .footer-bottom ul li {
+    padding: 3px 5px;
+  }
   footer .footer-bottom ul li:last-child {
     border: none;
   }
@@ -952,6 +1021,13 @@ footer .footer-bottom .flex ul li.br0 {
 @media (max-width: 400px) {
   .container {
     width: calc(100% - 20px);
+  }
+  .container p {
+    font-size: 12px !important;
+    line-height: 20px !important;
+  }
+  .container h2 {
+    font-size: 24px !important;
   }
   .ss__head::after {
     bottom: -80px;
@@ -965,6 +1041,13 @@ footer .footer-bottom .flex ul li.br0 {
   .ss__thanh-tuu .box {
     width: 150px;
   }
+  .ss__thanh-tuu .box p {
+    font-size: 12px !important;
+    line-height: 20px !important;
+  }
+  .ss__thanh-tuu .box h4 {
+    font-size: 24px !important;
+  }
   .ss__khach-noi-gi .bg-img {
     top: 50px;
     right: 20px;
@@ -975,6 +1058,9 @@ footer .footer-bottom .flex ul li.br0 {
     width: 100%;
     height: 80px;
   }
+  .ss__seo .content__head h2 {
+    padding: 0 32px !important;
+  }
   .ss__seo .tab-content__img img {
     width: 100%;
     height: 100%;
@@ -982,17 +1068,29 @@ footer .footer-bottom .flex ul li.br0 {
   .ss__seo .tab-content {
     padding: 30px 10px;
   }
+  .ss__seo .tab-content__text p {
+    font-size: 12px !important;
+    line-height: 20px !important;
+  }
   .ss__seo .tab-content__text .content__head h2 {
     padding: 0 !important;
+    font-size: 24px !important;
   }
 }
 
 @media (max-width: 330px) {
+  .ss__head p span {
+    font-size: 13px !important;
+    line-height: 25px !important;
+  }
   .ss__head::after {
     bottom: -81px;
   }
   .ss__thanh-tuu .box {
     width: 130px;
+  }
+  .ss__gia-tri .content__head, .ss__team .content__head, .ss__van-hoa .content__head {
+    padding: 0;
   }
   .ss__seo .tab-content__img img {
     width: 100%;
