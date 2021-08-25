@@ -52,9 +52,25 @@ body a img {
 }
 
 .ss__head {
-  background: #276ae3;
+  min-height: 780px;
+  background-image: url("./w-2160-blue.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #f4f5f7;
-  position: relative;
+}
+
+@media (max-width: 900px) {
+  .ss__head {
+    min-height: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ss__head {
+    min-height: 800px;
+    background-image: url("mobile-blue.png");
+  }
 }
 
 .ss__head .content span {
@@ -63,17 +79,6 @@ body a img {
   font-size: 18px;
   line-height: 32px;
   margin-bottom: 25px;
-}
-
-.ss__head::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  width: 100%;
-  height: 100px;
-  background: url("Vector1.png");
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .ss__gia-tri .content__head, .ss__team .content__head, .ss__van-hoa .content__head {
@@ -763,9 +768,6 @@ footer .footer-bottom .flex ul li.br0 {
     font-size: 14px;
     line-height: 24px;
   }
-  .ss__head::after {
-    bottom: -76px;
-  }
   .ss__gia-tri .content__cards .flex, .ss__team .content__cards .flex, .ss__van-hoa .content__cards .flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1032,9 +1034,6 @@ footer .footer-bottom .flex ul li.br0 {
   .container .content__head p {
     font-size: 13px !important;
   }
-  .ss__head::after {
-    bottom: -80px;
-  }
   .ss__head p span {
     font-size: 13px !important;
     line-height: 24px !important;
@@ -1096,9 +1095,6 @@ footer .footer-bottom .flex ul li.br0 {
   .ss__head p span {
     font-size: 13px !important;
     line-height: 25px !important;
-  }
-  .ss__head::after {
-    bottom: -81px;
   }
   .ss__thanh-tuu .box {
     width: 130px;
